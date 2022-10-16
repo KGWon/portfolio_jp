@@ -29,7 +29,9 @@
     
   line-height: 150%;
   } 
-   
+   .g{
+    width:90%;
+   }
   
   .video {
     width: 100%;
@@ -111,20 +113,20 @@
               <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right"> 
                   
-                <li><a href="./skills.html" title="">技術(Skills)</a></li> 
-                 <li><a href="./career.html">職務 経歴</a></li>      
-                <li><a href="./projectSpring.html" title="">SpringBootプロジェクト</a></li>
+                  <li><a href="./skills.html" title="">技術(Skills)</a></li> 
+                  <li><a href="./career.html">職務 経歴</a></li>      
+                 <li><a href="./projectSpring.html" title="">SpringBootプロジェクト</a></li>
+             
+                 <li><a href="./projectJSP.html" title="">JSPプロジェクト&nbsp;&nbsp;</a></li>
+                 
             
-                <li><a href="./projectJSP.html" title="">JSPプロジェクト&nbsp;&nbsp;</a></li>
-                
-           
-        
-                  <li>
-                    <p>
-                      <a href="./index.html#contact" class="btn btn-default navbar-btn" title="">Contact me</a>
-                    </p>
-                  </li>
-        
+         
+                   <li>
+                     <p>
+                       <a href="./index.html#contact" class="btn btn-default navbar-btn" title="">Contact me</a>
+                     </p>
+                   </li>
+         
                 </ul>
               </div> 
             </div>
@@ -137,14 +139,16 @@
             <div class="row section-container-spacer">
               <div class="col-xs-12 col-md-12" style="font-family: 'Noto Sans KR', sans-serif;">
                 <br><br><br>
-                <h2>職務 経歴 <span style="font-size: 25px;">(2021.11 ~ 2022.09)</span></h2>
+                <h2>職務 経歴 <span style="font-size: 15px;">(2021.11 ~ 2022.09)</span></h2>
              <div class="ddd1">   <div class="video">
                  <b> [基本情報]<br></b>
-                 ■ 釜山職業専門学校でIT開発者クラス課程を終え、株式会社MICEHUBで2021.11~2022.09の期間勤務しました。</span><br>
-                 ■ 株式会社MICEHUBの事業内容 : <br>
-イベント産業に使用されるソフトウェアの開発。 詳しくは各イベントのウェブサイト構築とショッピングモール構築、イベント内で使われるバイヤーㆍセラー間のビジネスミーティングㆍマッチングシステムを構築する会社。
- <br>  ■ 株式会社MICEHUBでの職務内容 : <br>
-フロントエンド(vue.js, html, css)とバックエンド(java, mySQlを通じたDB制御関連)を同時に担当し、イベントウェブサイト構築とイベント管理者システム構築の全段階に参加しました。
+                 <br>■ 釜山職業専門学校で半年のIT開発者クラス課程を終え、株式会社MICEHUBで勤務しました。</span><br>
+                 <br>             ■ 事業内容サマリー
+                 <br>
+: イベント産業に使用されるソフトウェアの開発。 詳しくは各イベントのウェブサイト構築とショッピングモール構築、イベント内で使われるバイヤーㆍセラー間のビジネスミーティングㆍマッチングシステムを構築する会社。
+<br><br>  ■ 職務内容サマリー
+ <br>
+: フロントエンド(vue.js, html, css)とバックエンド(java, mySQlを通じたDB制御関連)を同時に担当し、イベントウェブサイト構築とイベント管理者システム構築 及び企画の全段階に参加しました。
    <br>
 
   </div></div>
@@ -161,24 +165,60 @@
   <div class="ddd1">   <div class="video">
     <b> [目次] </b>
   <br><br>
-    <a href="#list1">1.</a> [Vue.jsでフロントエンド業務遂行]<br>
-    <a href="#list2">2.</a> [JavaとmySqlを通じたバックエンド業務遂行]<br>
-    <a href="#list3">3.</a> [他社とのデータベース(DB)Mapping関連の協業]<br>
-    <a href="#list4">4.</a> [Struts基盤のJSPコードで発生するバグの修正]
+    <a href="#list1">1.</a> [Vue.jsでフロントエンド業務の行い]<br>
+    <a href="#list2">2.</a> [JavaとmySqlを通じたバックエンド(CRUD)業務及び企画]<br>
+    <a href="#list3">3.</a> [その他の業務:jsp、spring、react、AI関連]
   
   </div></div> </div>
   <div id = "list1">  
     <br><br>
   <div class="ddd1" >
     <div class="video">
-      1. [Vue.jsでフロントエンド業務遂行] <span style="font-size:17px;"><a href="#list">[▲目次]</a></span>
+      1. [Vue.jsでフロントエンド業務の行い] <span style="font-size:17px;"><a href="#list">[▲目次]</a></span>
   </div> 
-  
- <li><b><span style=" border-bottom: 1px dotted #353535;">회원 기능과 상품관리 구현</span>에 모델1을 적용하였습니다.</b></li> <br>
-모델1에서는 JSP페이지가 컨트롤러와 뷰를 동시에 담당하며 자바빈즈가 모델 역할을 하여 DB에 접근합니다.<br>해당 기능 구현을 위해 jsp파일들을 따로 만들어 DB에 연결하고 쿼리문과 메서드를 만들었고 필요한 경우 java파일을 import해서 사용했습니다. <br>
+
   <br>
-<li><b><span style=" border-bottom: 1px dotted #353535;">문의게시판 구현</span>에 모델2를 적용하였습니다.</b></li><br>
-하단 그림에서 Controller 역할을 담당하는 클래스와 Model에 해당하는 Dao, Dto를 생성하고, jsp로 View 페이지를 만들었습니다. 제가 구현한 클래스들에 대한 자세한 설명은 <a href="#list3">개발 과정</a>에서 드리겠습니다.
+<li>SellerやBuyerが存在する展示会において、カタログのように商品を閲覧し、各商品について詳細機能を持つ、ショッピングモールと類似した形態のサイトを多数制作しました。</li>
+<br>
+<li>必須的に内蔵された機能として <span style=" border-bottom: 1px dotted #353535;">検索フィルタリング機能、ビジネスミーティングの申し込み、ブックマークに関心商品を保存する、担当者にメールまたはメッセージを送る機能
+</span>などが含まれており、すべての機能をバックエンド(純粋JAVAあるいはspring frameworkを活用)の方にも実現しました。
+</li>
+<br>
+<li>以下は実際に構築したサイトの中で代表的な3つです。 <span style="color:gray; font-size:13px;">(ただ、ログインしないと一部サービスの利用に制限がある場合があります。)</span>
+</li>
+<br><table style="width:100%">
+  <tr>
+  <td style="width: 70%;">
+
+    <img class="g"  src="./assets/002.png" ><br><br>
+  </td>
+ <td><span style=" border-bottom: 1px dotted #353535;">韓国化粧品産業展K-beauty Expo</span>でカタログとショッピングモール機能構築(Frontend)
+  <br>  <a href="https://www.k-beautyexpo.co.kr/fairOnline.do?selAction=single_page&SYSTEM_IDX=83&FAIRMENU_IDX=11843&hl=KOR#/?TYPE=uci" target="_blank">▶ サイトに訪問する</a>
+</td>
+    
+</tr>
+<tr> 
+  <td style="width: 70%;">
+
+    <img class="g"  src="./assets/010.png" ><br><br>
+  </td>
+ <td><span style=" border-bottom: 1px dotted #353535;">KOTRA主管の外資系企業JobFair</span>でエントリーと採用サービス機能構築(Frontend & Backend)、DB設計も直接担当
+<br>  <a href="https://jobfairfic.kotra.biz/fairContents.do?FAIRMENU_IDX=13849&hl=KOR" target="_blank">▶ サイトに訪問する</a>
+ </td>
+</tr>
+<tr> 
+  <td style="width: 70%;">
+
+    <img class="g"  src="./assets/011.png" >
+  </td>
+ <td><span style=" border-bottom: 1px dotted #353535;">韓国繊維協会の展示会</span>で複雑なフィルタリング機能が含まれた企業/商品カタログとバイヤー-セラー間のメッセージのやり取りができるメールボックス機能の構築(Frontend & Backend)
+  <br>  <a href="https://www.previewinseoul.com/fairOnline.do?selAction=single_page&SYSTEM_IDX=7#/" target="_blank">▶ サイトに訪問する</a>
+  
+ </td>
+</tr>
+</table>
+
+
  <br>  <br>
 
 </div>  
@@ -188,38 +228,58 @@
     <br><br>
   <div class="ddd1">   
     <div class="video">
-  2. [JavaとmySqlを通じたバックエンド業務遂行] <span style="font-size:17px;"><a href="#list">[▲目次]</a></span></div>
+  2. [JavaとmySqlを通じたバックエンド(CRUD)業務及び企画] <span style="font-size:17px;"><a href="#list">[▲目次]</a></span></div>
 
 <br> 
-<b>2.1. 상품 목록 테이블</b><br>
-<span style="font-size: 17px;">: 이곳에서 fileName은 업로드된 이미지 파일이 저장되는 곳입니다.</span>
+<b>2.1. 国際的ビジネスミーティングの予約機能の実装</b><br><br>
+
+
+<img class="g"  src="./assets/005.png" ><br><br>   
+
+<span style="font-size: 17px;">: 展示会でバイヤーとセラーがミーティングの約束をするために会う時間を選択する機能が必要となります。<br>
+ → 私は様々な国から来た利害関係者が重ならない時間にミーティングできるように各国のタイムゾーンに基づいたミーティング予約機能を開發しました。</span>
 <br> 
 <br> <br>  
 
-<img class="g"  src="./assets/images/pic/member.png" ><br><br>   <b>2.2. 회원 테이블</b><br>
-<span style="font-size: 17px;">: 이곳에서 regist_day는 가입한 날짜입니다.</span>
+<b>2.2. 他社とのデータベース(DB)Mapping関連の協業</b><br><br>
+<span style="font-size: 17px;">: イベントには複数のITシステム会社が関与し、 
+  同じ顧客情報を複数の会社DBに連動させる作業が必要な場合があります。 これをmappingと呼びます。<br>
+  → 私は展示会の顧客管理mapping業務を担当し、弊社DBで起きたCRUD作業を他社DBにも連動させる業務を担当しました。
+ <br>
+  <a href="./assets/CRM Mapping Suggetion and Developing Plan.pdf" target="_blank">▶ファイルダウンロード(pdf):私が企画書を作成し、そのまま実装しました。 (韓国語)</a>
+</span>
 <br><br>  
 <br>
-<img  class="g" src="./assets/images/pic/mvc_board.png" ><br> <br>   <b>2.3. 문의게시판 테이블</b> <br>
-<span style="font-size: 17px;">: 이곳에서 bGroup은 원글과 답글을 Grouping할 값을 지정하기 위한 필드이고, bStep은 Grouping된 답글들 사이의 순서를 나타낼 필드, bIndent는 답글의 답글을 구현하기 위해 들여쓰기 값을 설정하는 필드입니다.</span>
+<b>2.3. 会社のデータをExcelファイルにして顧客がダウンロードできる機能を実現</b> <br><br>
+<img  class="g" src="./assets/004.png" ><br> <br>   
+
+<span style="font-size: 17px;">: ウェブサイトで確認可能なデータをExcel形式のデータに変換し、お客様に便利にダウンロードしてもらう機能を開発しました。
+
+<br>
+  <a href="./assets/DB to Excel Download Manual.pptx" target="_blank">▶ファイルダウンロード(ppt):私が作成した機能説明書です。 直接企画し、フルスタックで実現しました。(韓国語)
+  </a></span>
 
 
 </div></div>
   <div id = "list3">
     <br><br> <div class="ddd1">   <div class="video">
 
-    3. [他社とのデータベース(DB)Mapping関連の協業] <span style="font-size:17px;"><a href="#list">[▲目次]</a></span></div>
-   
-
-</div></div> 
-  <div id = "list4">
-    <br><br> <div class="ddd1">   <div class="video">
-    4. [StrutsベースのJSPコードで発生するバグの修正] <span style="font-size:17px;"><a href="#list">[▲目次]</a></span></div><br>
+    3. [その他の業務:jsp、spring、react、AI関連] <span style="font-size:17px;"><a href="#list">[▲目次]</a></span></div><br>
  
   </div></div>
   <div class="ddd">
-  
-  </div></div>
+ <p> <li>  <span style=" border-bottom: 1px dotted #353535;">Struts基盤のJSPコード, その他springコードで発生するバグの修正</span></li>
+<br>
+  :  勤めていた会社はStrutsを基盤にして、その中にjsp、vue.js、もう一つのバックエンドサーバーとして機能するspringなどが混在した形態のコードを使用し、大小のバグを頻繁的に処理しなければなりませんでした。 おかげでバグが起きた時、慌てずに各種リソースを検索して探して解決する能力を磨くことができました。<br><br>  
+ </p><p>   <li> <span style=" border-bottom: 1px dotted #353535;">フロントエンドメンテナンス</span></li>  <br>
+  :  勤めていた会社では新しいシステムを作るためにreact.jsを積極的に採用していました。 私は直接reactで開発はしませんでしたが、他の開発者が作ったコードで発生するバグのメンテナンスを行いました。
+  <br>  <br>
+
+</p><p><li> <span style=" border-bottom: 1px dotted #353535;">社内AIセミナーに参加</span></li> <br>
+:  勤務していた会社ではAIライブラリを活用して新しいサービスを開発しようとしていました。 この時、職員間のセミナーに積極的に参加し、pythonでAIライブラリ使用に対する基礎的な知識を習得しました。
+
+</p>
+</div></div>
                 </div>  
             </div>
             

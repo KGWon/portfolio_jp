@@ -41,6 +41,9 @@
   box-shadow: 0px 8px 33px #999;
 }
 
+.g{width:100%; display: none;}
+.g1{width:100%;}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -76,7 +79,9 @@ iframe {
 @media screen and (max-width: 1011px) { 
 #data{width:100%;} 
 
-.g{width:100%;}
+.g{width:100%; display: none;}
+.g1{width:100%;}
+
 .ddd1{
      width: 100%; /* 정렬하려는 요소의 넓이를 반드시 지정 */ margin: 0 auto; 
      text-align: left; 
@@ -113,20 +118,21 @@ iframe {
       
             <div class="collapse navbar-collapse" id="navbar-collapse">
               <ul class="nav navbar-nav navbar-right"> 
+                 
+                <li><a href="./skills.html" title="">技術(Skills)</a></li> 
+                 <li><a href="./career.html">職務 経歴</a></li>      
+                <li><a href="./projectSpring.html" title="">SpringBootプロジェクト</a></li>
+            
+                <li><a href="./projectJSP.html" title="">JSPプロジェクト&nbsp;&nbsp;</a></li>
                 
-              <li><a href="./skills.html" title="">技術(Skills)</a></li> 
-                   <li><a href="./career.html">職務 経歴</a></li> 
-          <li><a href="./projectSpring.html" title="">SpringBootプロジェクト</a></li>
-      
-          <li><a href="./projectJSP.html" title="">JSPプロジェクト&nbsp;&nbsp;</a></li>
-          
+           
         
-  
-            <li>
-              <p>
-                <a href="./index.html#contact" class="btn btn-default navbar-btn" title="">Contact me</a>
-              </p>
-            </li>
+                  <li>
+                    <p>
+                      <a href="./index.html#contact" class="btn btn-default navbar-btn" title="">Contact me</a>
+                    </p>
+                  </li>
+        
       
               </ul>
             </div> 
@@ -140,45 +146,44 @@ iframe {
           <div class="row section-container-spacer">
             <div class="col-xs-12 col-md-12" style="font-family: 'Noto Sans KR', sans-serif;">
               <br><br><br>
-              <h2>SpringBootプロジェクトの紹介 <span style="font-size: 25px;">(研修時期のチームプロジェクト)</span></h2>
+              <h2>SpringBootプロジェクトの紹介 <span style="font-size: 15px;">(スクール時期のチームプロジェクト)</span></h2>
            <div class="ddd1">   <div class="video">
-               <b> [기본정보]<br></b><br>
-               ■ 프로젝트 명 : <span style=" border-bottom: 1px dotted #353535;">Spring Boot로 구현한 부산 맛집 리뷰사이트 -「BMJ WHERE」</span> <br>
-              ■ 기획의 방향성 : SpringBoot를 사용하여 부산 로컬 맛집 정보를 카테고리별로 세분화하여 제공하고, 또 ‘맛집 조회’ 화면에서 리뷰 남기기와 평점 매기기 기능을 통해 인기도를 한 눈에 파악하는 멤버십 사이트를 만들어보고 싶었습니다.<br> 
-■ 나의 포지션 : チームメンバーは計4人で、私はバックエンド機能(시큐리티와 CRUD)およびDB設計を担当しました。<br>
-■ 開発期限 : 2021.10.12~2021.10.22 (10日間)<br> 
+               <b> [基本情報]<br></b><br>
+               ■ プロジェクト名 : <span style=" border-bottom: 1px dotted #353535;">Spring Bootで実装した釜山グルメレビューサイト -「BMJ WHERE」</span> <br>
+              ■ 企画の方向性 : SpringBootを活用して釜山ローカルグルメ情報をカテゴリー別に細分化して提供し、また「グルメ照会」画面でレビューを残すことと評点付け機能を通じて人気度を一目で把握するメンバーシップサイトを作ってみたかったです。<br> 
+■ 私のポジション : チームメンバーは計4人で、私はバックエンド機能(セキュリティ、つまりログイン機能とCRUD)およびDB設計を担当しました。<br>
 ■ 活用された技術 <br>
-&nbsp;&nbsp;&nbsp;1. <b>Spring Boot(framework)</b>  : 스프링을 이용하면 보안관련(Spring Security), 데이터베이스 연결(JDBC, JPA Hibernate), 디버그 테스트(junit), Thymeleaf, HikariPool 등 수많은 기술을 지원합니다. Spring Boot의 경우 많은 것이 자동화로 처리되어 xml파일없이 쉽게 @(annotation) 하나로 관리가 가능하며, 스프링을 더 쉽게 다룰 수 있게 해주기 때문에 선택하였습니다. 
+&nbsp;&nbsp;&nbsp;1. <b>Spring Boot(framework)</b>  : スプリングを利用すると、セキュリティ関連(SpringSecurity)、データベース接続(JDBC、JPAHibernate)、デバッグテスト(junit)、Thymeleaf、HikariPoolなど数多くの技術をサポートします。 SpringBootの場合、多くのものが自動化されてxmlファイルなしで簡単に@(annotation)一つで管理でき、スプリングをより簡単に扱えるようにしてくれるので選択しました。
 
 <br>
-&nbsp;&nbsp;&nbsp;2. <b>Gradle build</b>  : Maven에서 사용하는 pom.xml보다 훨씬 편하고 가독성이 더 좋아 선택했습니다.
+&nbsp;&nbsp;&nbsp;2. <b>Gradle build</b>  : Mavenで使用するpom.xmlよりはるかに楽で可読性が良かったので選びました。
 <br>
-&nbsp;&nbsp;&nbsp;3. <b>JPA, Hibernate</b> : Mybatis와 같은 xml mapper를 이용한 데이터베이스 보조도구와 달리 JPA의 경우 자바 ORM 구조를 따라 클래스 형태로 추상화시키면 되기 때문에, 개발 코드가 보다 단순화된다는 점 때문에 선택했습니다.
+&nbsp;&nbsp;&nbsp;3. <b>JPA, Hibernate</b> : Mybatisのようなxmlmapperを利用したデータベース補助ツールとは異なり、JPAの場合、ジャワORM構造に沿ってクラス形態に抽象化させれば良いので、開発コードがより単純化されるという点で選択しました。
 
 <br>
-&nbsp;&nbsp;&nbsp;4. <b>Thymeleaf</b> : JSP 대신 Thymeleaf를 사용하여 화면처리를 하면 Model에 담긴 객체를 화면에서 JavaScript로 처리하기 편리하고, .html파일로 생성하는 데 문제가 없어 편리하기에 선택했습니다.
+&nbsp;&nbsp;&nbsp;4. <b>Thymeleaf</b> : JSPの代わりにThymeleafを使って画面処理をすると、Modelに含まれたオブジェクトを画面でJavaScriptで処理しやすく、.htmlファイルで生成するのに問題がなく便利なので選択しました。
 
  <br>
- &nbsp;&nbsp;&nbsp;5. 그외 <b>MariaDB(DB), Intellij(IDE), Tomcat 9.0(server), Java 11(jre)</b>을 사용하여 개발했습니다.
+ &nbsp;&nbsp;&nbsp;5. その他<b>MariaDB(DB), Intellij(IDE), Tomcat 9.0(server), Java 11(jre)</b>を使用して開発しました。
  
 <br>  
 <a href="https://github.com/KGWon/f_bmjWhere.git"  target="_blank" ><img src ="./assets/images/output/10.png" style="width:70px; display:block; margin : 0 0 0 auto ;"></a>
 </div></div>
             <div id="aa">
 <br>
-        <br><br>        <h3>1) 먼저, 구현된 기능들을 소개드립니다.<span style="font-size: 18px;"><a href="#tt">(개발 일지는 하단에 기재)</a></span></h3><br>
+        <br><br>        <h3>以下は、実装した内容でございます。<span style="font-size: 18px;"></span></h3><br>
 <div class="video">
     <div class="video-container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1-bMfJ9_6mU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div> 
 </div> 
 <div class="ddd"><br>
-<b>[검색 및 시큐리티(회원가입 및 로그인) 기능 구현]</b><br>
+<b>[検索およびセキュリティ(会員登録およびログイン)機能の実装]</b><br>
 <br>
-■ 메인페이지에서 리스트 페이지로 검색 기능 연동<br>
-■ 맛집 리스트 페이지 검색 기능 구현<br>
-■ 시큐리티(회원가입 및 로그인, 로그아웃) 기능 구현<br>
-■ 내비게이션의 'EAT딜' 메뉴에서 로그인 유저 권한 설정 구현<br><br>
+■ メインページからリストページへ検索機能連動<br>
+■ グルメリストページ検索機能の実装<br>
+■ セキュリティ(会員登録及びログイン、ログアウト)機能の実装<br>
+■ ナビゲーションの「EATDeal」メニューからログインユーザー権限設定を実装<br><br>
 <br></div>
 <div class="video"> 
   <div class="video-container">
@@ -186,16 +191,16 @@ iframe {
   </div> 
 </div> 
 <div class="ddd"><br>
-<b>[카테고리 페이지, 상세정보 조회 페이지 및 회원 별점 리뷰 기능 구현]</b><br>
+<b>[カテゴリページ、詳細情報照会ページおよび会員星レビュー機能の実装]</b><br>
 <br>
-■ 세분화된 카테고리 (한식, 일식, 중식, 양식, 카페) 별 데이터 목록 필터링 기능 구현<br>
-■ 카테고리 페이지에서 데이터 항목별 상세정보 조회 페이지로 접속<br>
-■ 상세정보 조회 페이지의 기능들 : 사용자 CRUD 구현<br>
-<span style="color:white;">---</span>(1) DB에서 데이터 불러오기 <br>
-<span style="color:white;">---</span>(2) DB의 주소값과 Kakao맵 API를 연동하여 지도 표현<br>
-<span style="color:white;">---</span>(3) 리뷰 등록과 리뷰 불러오기<br>
-<span style="color:white;">---</span>(4) 리뷰 별점 계산<br>
-<span style="color:white;">---</span>(5) 리뷰 수정 및 삭제<br><br> <br></div>
+■ 細分化されたカテゴリ(韓国料理、和食、中華料理、洋食、カフェ)別データリストフィルタリング機能を実装<br>
+■ カテゴリページからデータ項目別詳細情報照会ページにアクセス<br>
+■ 詳細情報照会ページの機能:ユーザーCRUDの実装<br>
+<span style="color:white;">---</span>(1) DBからデータをインポートする<br>
+<span style="color:white;">---</span>(2) DBのアドレス値とKakaoマップAPIを連動させて地図表現<br>
+<span style="color:white;">---</span>(3) レビュー登録とレビューの読み込み<br>
+<span style="color:white;">---</span>(4) レビュー星点数の計算<br>
+<span style="color:white;">---</span>(5) レビューの修正と削除<br><br> <br></div>
 
 <div class="video">
   
@@ -204,16 +209,17 @@ iframe {
   </div>
 </div> 
 <div class="ddd"><br>
-<b>[관리자 접속 시 데이터관리 기능 구현]</b><br>
+<b>[管理者接続時のデータ管理機能の実装]</b><br>
 <br>
-■ 관리자 권한 설정 구현<br>
-■ 관리자 CRUD 구현<br>
-<span style="color:white;">---</span>(1) (관리자) 맛집 정보를 DB에 등록하는 페이지 구현<br>
-<span style="color:white;">---</span>(2) (관리자) 맛집 수정과 삭제 기능<br><br> 
+■ 管理者権限設定の実装<br>
+■ 管理者CRUDの実装<br>
+<span style="color:white;">---</span>(1) (管理者)グルメ情報をDBに登録するページを実装<br>
+<span style="color:white;">---</span>(2) (管理者)グルメの修正と削除機能<br><br> 
 
 </div></div>
-<div id="tt">
+<div id="tt" style="display:none;">
 <br><br><br>
+
 <h3>2) 다음으로, Spring을 사용한 개발 과정 및 저의 개발일지를 소개드립니다.<span style="font-size: 18px;"><a href="#aa">(구현된 기능으로 이동)</a></span></h3>
 <div id="list">
   
@@ -235,7 +241,7 @@ iframe {
 
 </div>
 <br>
-<img class="g"  src="./assets/images/picpic/bea.png" style=" display:block; margin : 0 auto ;"><br>
+<img class="g1"  src="./assets/images/picpic/bea.png" style=" display:block; margin : 0 auto ;"><br>
 
 스프링부트에서 처리되는 작업은 사용자화면에서의 요청이 Controller로 이동하고, 이때의 데이터값은 DTO형식으로서 Controller에서 Serive계층으로 이동하며, 이것을 Service계층에서 Entity객체로 변환하여 Repository로 넘어가 데이터를 처리하고, 그 결과값을 역순으로 보냅니다. 저는 이러한 패턴을 숙지하고 Controller계층과 Service계층, Repository계층을 나누고 Entity와 DTO를 정의하여 개발에 임하였습니다.
 </div></div>
